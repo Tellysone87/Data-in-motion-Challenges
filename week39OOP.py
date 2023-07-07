@@ -38,8 +38,16 @@ class BankAccount: # Represents a bank account
         """ A method that displays the account holder's name and current balance."""
         return f"{self.account_holder} ${self.balance}"
     
+    
+def grabName():
+    """ function to grab the users name"""
+    name = input("Please enter your name: ")
+
+    return name
+    
 def main():
-    user1 = BankAccount("Sue Sweet",120.00) # quick test of class
+    name1 = grabName()
+    user1 = BankAccount(name1,120.00) # quick test of class
     print(user1.display_balance())
     print(user1.deposit(50.00))
     print(user1.withdraw(100.00))

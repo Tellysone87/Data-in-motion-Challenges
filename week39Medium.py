@@ -14,7 +14,7 @@ def common(list1,list2):
 
     common_list = [] # new list to store common values between list1 and list2
 
-    set1 = set(list1) # created sets to remove any duplictes that may be present
+    set1 = set(list1) # created sets to remove any duplictes that may be present in any of the lists
     set2 = set(list2)
 
     for item in set1: # if current item in the set is in set2, add it to the common_list
@@ -22,7 +22,6 @@ def common(list1,list2):
             common_list.append(item)
 
     return common_list # returns the items that match
-
 
 def main():
     #simple test
