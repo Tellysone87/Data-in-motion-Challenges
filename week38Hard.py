@@ -1,5 +1,6 @@
 # Date: 7/11/2023
 # Author: Shantel Williams
+# pushes to github
 
 # instructions:
 # Given a list of dictionaries where each dictionary contains ‘name’ 
