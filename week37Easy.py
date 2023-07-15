@@ -21,6 +21,6 @@ def main():
     test = letter_count("banana") # test function
     print(test)
 
-    print(letter_count("")) # returjs empty dictionary
+    print(letter_count("")) # displays - "No string was provided"
 
 main()
