@@ -14,8 +14,10 @@ def highest_total_sales(list_of_products):
     for transaction in list_of_products: # loop through transactions
         if transaction[1] not in Product_sales: # if a key for the product key does not exist, add the key and the price for that transaction
             Product_sales[transaction[1]] = transaction[2]
-        elif transaction[1] in Product_sales: # if the key does exist, add that new purchase price to the existing one
+        elif transaction[1] in Product_sales: # if the key does exist, add that new purchase price to the existing one.
             Product_sales[transaction[1]] = Product_sales.get(transaction[1],0) + transaction[2]
+
+    print(Product_sales)
 
     return max(Product_sales, key=Product_sales.get) # used get() and max() to display the product ID with the highest value. 
 
