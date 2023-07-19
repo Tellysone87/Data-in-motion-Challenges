@@ -8,29 +8,28 @@
 # set_radius(new_radius): This method should set a new radius for the circle.
 # calculate_area(): This method should calculate and return the area of the circle using the formula πr^2. You can use 3.14 as the approximation for π.
 # calculate_circumference(): This method should calculate and return the circumference of the circle using the formula 2πr.
-# To test your implementation, create an instance of the circle with a radius of 5, update the radius to 10, and then calculate the area and circumference.
 import math
 
 #create a Circle class
 class Circle:
     def __init__(self, radius):
-        self._radius = radius # _raduis allows us to keep the variable protected and prevent direct access from outside the class. 
+        self.__radius = radius # _raduis allows us to keep the variable protected and prevent direct access from outside the class. 
 
     def get_raduis(self):
         """ This method should return the radius of the circle."""
-        return self._radius
+        return self.__radius
 
     def set_radius(self, new_radius):
         """ This method should set a new radius for the circle."""
-        self._radius = new_radius
+        self.__radius = new_radius
 
     def calculate_area(self):
         """ This method should calculate and return the area of the circle using the formula πr^2. You can use 3.14 as the approximation for π."""
-        return math.pow(self._radius, 2) * 3.14  # area = (π * Radius * Radius )
+        return math.pow(self.__radius, 2) * 3.14  # area = (π * Radius * Radius )
 
     def calculate_circumference(self):
         """ This method should calculate and return the circumference of the circle using the formula 2πr."""
-        return 2 * self._radius * 3.14
+        return 2 * self.__radius * 3.14
 
 def main():
     test = Circle(5) # create instance of circle
@@ -44,7 +43,7 @@ def main():
     print(f"The circles circumference is: {round(test.calculate_circumference(), 2)}")
 
     try: # testing to see if the protected varaible is accessed. 
-        print(test.radius) # should return error to not provide access to direct variable.
+        print(test.__radius) # should return error to not provide access to direct variable.
     except AttributeError:
         print("This data is protected.")
 
