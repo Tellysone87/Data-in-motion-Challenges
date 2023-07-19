@@ -1,4 +1,4 @@
-# Date: 7/17/2023
+# Date: 7/18/2023
 # Author: Shantel Williams
 # Hard: Let’s assume you have a list of tuples stored in the variable transactions, each representing a transaction in an e-commerce store 
 # where the first element is the transaction ID, the second element is the product ID, and the third element is the price.
