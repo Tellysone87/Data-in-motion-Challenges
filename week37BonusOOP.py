@@ -46,7 +46,7 @@ def main():
     print(f"The circles circumference is: {round(test.calculate_circumference(), 2)}")
 
     try: # testing to see if the protected varaible is accessed. 
-        print(test.radius) # should return error to not provide access to direct variable
+        print(test.radius) # should return error to not provide access to direct variable.
     except AttributeError:
         print("This data is protected.")
 
