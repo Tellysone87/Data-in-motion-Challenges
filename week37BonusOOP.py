@@ -9,7 +9,6 @@
 # calculate_area(): This method should calculate and return the area of the circle using the formula πr^2. You can use 3.14 as the approximation for π.
 # calculate_circumference(): This method should calculate and return the circumference of the circle using the formula 2πr.
 # To test your implementation, create an instance of the circle with a radius of 5, update the radius to 10, and then calculate the area and circumference.
-
 import math
 
 #create a Circle class
@@ -32,7 +31,6 @@ class Circle:
     def calculate_circumference(self):
         """ This method should calculate and return the circumference of the circle using the formula 2πr."""
         return 2 * self._radius * 3.14
-
 
 def main():
     test = Circle(5) # create instance of circle
