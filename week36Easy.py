@@ -9,14 +9,16 @@
 # count_vowels(“Prediction”) ➞ 4
 
 def num_of_vowels(a_string):
-    count = 0
-    vowels = ["a","e","i","o","u"]
+    """ Function that takes a string and returns the number (count) of vowels contained within it. """
 
-    for letter in a_string:
+    count = 0 # set count variable to keep track of vowels
+    vowels = ["a","e","i","o","u"] # added vowels to a list to check each letter against
+
+    for letter in a_string.lower(): # checking each letter in the string against the vowel list after making sure its lower case.
         if letter in vowels:
-            count +=1
+            count +=1 # if letter is in vowel, add 1 to our count
 
-    return count
+    return count # return the count
 
 def main():
     test1 = num_of_vowels("Palm")
@@ -24,5 +26,8 @@ def main():
 
     test2 = num_of_vowels("Prediction")
     print(test2)
+
+    test3 = num_of_vowels("Application")
+    print(test3)
 
 main()
