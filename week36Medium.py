@@ -8,7 +8,7 @@
 # format_date(“12/31/2019”) ➞ “20193112”
 # format_date(“01/15/2019”) ➞ “20191501”
 
-# Notes
+# Notes:
 # Return value should be a string.
 def convert_date(Date):
 
