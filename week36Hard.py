@@ -13,6 +13,7 @@
 # letters(“happiness”, “envelope”) ➞ [“enp”, “ahis”, “lov”]
 # letters(“kerfuffle”, “fluffy”) ➞ [“flu”, “ekr”, “y”]
 # letters(“match”, “ham”) ➞ [“ahm”, “ct”, “”]
+
 def letters(word1,word2):
     """ A function that takes in two words as input and returns a list of three elements"""
 
@@ -49,9 +50,9 @@ def letters(word1,word2):
     
 def main():
     test = letters("sharp", "soap")
-    test3 = letters("match", "ham")
     test2 = letters("board", "bored")
-    print(test2)
+    test3 = letters("match", "ham")
     print(test)
+    print(test2)
     print(test3)
 main()
