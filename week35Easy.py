@@ -12,10 +12,15 @@ def mean(num_list):
     mean = 0  # set the mean variable to zero, it will be updated later in the function.
     multiply = 1  # we will start by multiplying the first num by 1
     list_length = len(num_list)  # tells us how many number are in the list.
-    i = 0
 
+    # if list is empty
     if list_length == 0:
         return "No numbers provided"
+    
+    # condition for negative numbers
+    for num in num_list:
+        if num <= 0:
+            return "please enter postive numbers"
 
     # # steps is negative numbers are present
     # for number in num_list: # for number in list
@@ -51,7 +56,7 @@ def mean(num_list):
 
 def main():
     # mean function tests
-    test = mean([2,18])
+    test = mean([2,-18])
     print(test)
 
     test2 = mean([10, 51.2, 8])
