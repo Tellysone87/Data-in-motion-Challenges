@@ -1,6 +1,5 @@
 # Date: 7/27/2023
 # Author: Shantel Williams
-
 # Expert: Create a function that returns the product of two integers. 
 # This process of multiplication can be achieved via repetitive addition, thus, the process can be done recursively.
 
@@ -16,7 +15,6 @@
 # You’re expected to solve this challenge using a recursive approach
 def multiply(int1,int2):
     """ Function that returns the product of two integers."""
-
     if int1 == 0 or int2 == 0: # condition if any of the numbers passed are zero
         return 0
 
@@ -33,7 +31,6 @@ def multiply(int1,int2):
         return -int1 + multiply(int1, int2 + 1) # while int2 is negative and but not yet equal to -1, keep adding the negative return value of multiply to int1.
 
 def main():
-    # test cases
     test = multiply(10, 2)
     test2 =  multiply(-51, -4)
     test3 = multiply(3, 9)
