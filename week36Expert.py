@@ -17,19 +17,23 @@
 def multiply(int1,int2):
     """ Function that returns the product of two integers."""
 
+    if int1 == 0 or int2 == 0: # condition if any of the numbers passed are zero
+        return 0
+
     # base condition for positive numbers
-    if int2 > 0:
-        if int2 == 1:  
-            return int1
-        return int1 + multiply(int1, int2 - 1)
+    if int2 > 0: # i am using int2 as the number of times to repeat addition. If int2 is positive perform these steps:
+        if int2 == 1:  # base case is to stop recursion when int2 = 1
+            return int1 # return int1 
+        return int1 + multiply(int1, int2 - 1) 
 
     # base condition for negative numbers  
-    if int2 < 0:
-        if int2 == -1: 
-            return -int1
-        return -int1 + multiply(int1, int2 + 1)
+    if int2 < 0: # If int2 is negative perform these steps:
+        if int2 == -1: # base case is to stop recursion when int2 = -1
+            return -int1 # returning the negative value of int1
+        return -int1 + multiply(int1, int2 + 1) # while int2 is negative and but not yet equal to -1, keep adding the negative return value of multiply to int1.
 
 def main():
+    # test cases
     test = multiply(10, 2)
     test2 =  multiply(-51, -4)
     test3 = multiply(3, 9)
