@@ -1,7 +1,8 @@
 # Date: 7/27/2023
 # Author: Shantel Williams
 
-# Expert: Create a function that returns the product of two integers. This process of multiplication can be achieved via repetitive addition, thus, the process can be done recursively.
+# Expert: Create a function that returns the product of two integers. 
+# This process of multiplication can be achieved via repetitive addition, thus, the process can be done recursively.
 
 # Examples:
 # multiply(10, 2) ➞ 20
@@ -13,22 +14,20 @@
 
 # Notes:
 # You’re expected to solve this challenge using a recursive approach
-
 def multiply(int1,int2):
     """ Function that returns the product of two integers."""
 
-    if int1 == 0 or int2 == 0: # condition if any of the numbers are zero
-        return 0
-    
+    # base condition for positive numbers
     if int2 > 0:
-        if int2 == 1: # base condition for positive numbers 
+        if int2 == 1:  
             return int1
         return int1 + multiply(int1, int2 - 1)
-        
+
+    # base condition for negative numbers  
     if int2 < 0:
-        if int2 == -1:
-            return int1
-        return int1 + multiply(int1, int2 + 1)
+        if int2 == -1: 
+            return -int1
+        return -int1 + multiply(int1, int2 + 1)
 
 def main():
     test = multiply(10, 2)
