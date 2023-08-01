@@ -15,13 +15,13 @@
 def area(the_base, the_height):
     """ Function that takes the base and height of a triangle and return its area. """
 
-    area = (the_base * the_height) / 2
+    area = (the_base * the_height) / 2 # formula for area
 
-    return area
+    return area # return area
 
 def main():
-    test = area(20,50)
+    test = area(20,50) # test case
 
     print(test)
-    
+
 main()
