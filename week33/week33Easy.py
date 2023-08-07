@@ -1,6 +1,5 @@
 # Date: 8/7/2023
 # Author: Shantel Williams
-
 # Easy: Given a number, return a list containing the two halves of the number. If the number is odd, make the rightmost number higher.
 # Examples:
 # number_split(4) ➞ [2, 2]
@@ -9,13 +8,12 @@
 # number_split(-9) ➞ [-5, -4]
 
 # Notes:
-# All numbers will be integers.
-# You can expect negative numbers too.
-# math.ceil rounds number up 
-# math.floor rounds number down
+# All numbers will be integers. You can expect negative numbers too.
+# math.ceil rounds number up and math.floor rounds number down. I will utilize this for the odd numbers
 import math
 
 def number_split(input_number):
+    """ Function that returns a list containing the two halves of the number."""
 
     if input_number == 0: # if zero is entered, return statement
         return "Zero cannot be split"
@@ -26,7 +24,7 @@ def number_split(input_number):
     if input_number % 2 != 0: # if number is odd, return [half rounded down, half rounded up]
         halves = [math.floor(input_number/2), math.ceil(input_number/2)]
 
-    return halves
+    return halves # return half list
 
 def main():
     test = number_split(4)
