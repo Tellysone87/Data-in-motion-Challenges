@@ -21,9 +21,12 @@ def sum_common(lst1, lst2, lst3):
         count_dict[num] = count_dict.get(num, 0) + 1  # am store the total count per number.    Ex. {1: 1, 2: 3, 3: 3, 5: 1, 7: 1}
 
     for num_key in count_dict: # since there is always 3 list, 
-        if count_dict[num_key] % 3 == 0: # if the total count is a multiple of 3
-            sum+=num_key * (count_dict[num_key]//3) # we add the number times the count divided by 3.   Ex. 2: 3, 3: 3 --> (2*1) + (3*1) = 5
-    
+        if  count_dict[num_key] == 3: # if the count = 0,
+            sum+= num_key # add that number to sum
+
+        elif count_dict[num_key] > 3: # else if it greater than 3
+            sum+=num_key * (count_dict[num_key]//3) # we add the number times the count divided by 3.(Round down)   Ex. 2: 3, 3: 3 --> (2*1) + (3*1) = 5
+            
     return sum
 
 def main():
