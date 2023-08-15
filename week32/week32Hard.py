@@ -14,24 +14,21 @@
 # Notes:
 # Remember to return a string.
 # The first phrase is always “Loves me”.
-
 def loves_me(number_of_petals):
     """ return a string which repeats the phrases “Loves me” and “Loves me not” for every alternating petal,
       and return the last phrase in all caps. """
     
     stop = number_of_petals # tells the program where to stop
     list_of_phrase = [] # list for keeping each phrase
+    end_phrase = "" # empty string to return results
 
-    phrase1 = "Loves me" # the two alternating phrases
+    # the two alternating phrases
+    phrase1 = "Loves me" 
     phrase2 = "Loves me not"
 
-    end_phrase = "" # empty string to return
-    i = 1 # starting our count at 1
-
-    if number_of_petals == 0: # case if the function of fed zero petals. There is not flower.
+    if number_of_petals == 0: # case if the function is fed zero petals. There is not flower.
         return "You don't even have a flower."
-
-    if i == number_of_petals: # case if the input is one
+    if number_of_petals == 1: # case if the input is one
         return "LOVES ME"
 
     for i in range(stop): # loop to alternate phrases and add to the list
@@ -41,7 +38,6 @@ def loves_me(number_of_petals):
             list_of_phrase.append(phrase2)
     
     list_of_phrase[-1] = list_of_phrase[-1].upper() # making the last phrase capital
-
     end_phrase = ", ".join(list_of_phrase) # joining each phrase on the list with a comma between. Stored in the the variable end_phrase. 
 
     return end_phrase # return combination
