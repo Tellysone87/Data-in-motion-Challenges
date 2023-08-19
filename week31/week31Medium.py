@@ -2,7 +2,6 @@
 # Author: Shantel Williams
 
 # Medium: Python got drunk and the built-in functions str() and int() are acting odd
-
 # str(4) ➞ 4
 # str(“4”) ➞ 4
 # int(“4”) ➞ “4”
@@ -17,7 +16,6 @@
 # Notes:
 # This is meant to illustrate the dangers of using already-existing function names.
 # Extra points if you can de-drunk Python.
-
 def int_to_str(int_num):
     """ Function called int_to_str() that converts integers into strings"""
 
@@ -66,9 +64,9 @@ def main():
     test = int_to_str(4) # provided test cases
     test2 = str_to_int("4")
     test3 = int_to_str(29348) 
-    print(test)
-    print(test2)
-    print(test3)
+    print(f"{test} is type {type(test)}")
+    print(f"{test2} is type {type(test2)}")
+    print(f"{test3} is type {type(test3)}")
 
 main()
 
