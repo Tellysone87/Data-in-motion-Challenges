@@ -25,7 +25,5 @@ def main():
     print(test)
     print(test2)
     print(test3)
-    print(type(test))
-    print(type(test2))
 
 main()
