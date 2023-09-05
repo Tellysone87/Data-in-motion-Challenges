@@ -9,20 +9,20 @@
 # to_dict([“^”]) ➞ [{“^”: 94}]
 # to_dict([]) ➞ {}
 
-# Notes : Python ord() function returns the Unicode code from a given character.
-
+# Notes : Using Python ord() function. It returns the Unicode code from a given character.
 def to_dict(provided_list):
-    list_dict = []
+    """ A function that transforms a list of characters into a list of dictionaries."""
 
-    if not provided_list:
+    list_dict = [] # list to store dictionaries
+
+    if not provided_list: # case if empty list is passed
         return {}
     
-    for character in provided_list:
-        convert = {character: ord(character)}
-        list_dict.append(convert)
+    for character in provided_list: # looping through provided list and
+        convert = {character: ord(character)} # making a dictionary to hold the character(Key) and the ASCII value(Value)
+        list_dict.append(convert) # adding the dictionary to my list
 
-    return list_dict
-
+    return list_dict # return list of dictionaries
 
 def main():
     tests = [
