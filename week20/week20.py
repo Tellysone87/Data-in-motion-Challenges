@@ -23,6 +23,7 @@ def number_compare(num1,num2):
 
 def main():
     test = [
+        
         number_compare(1,2),
         number_compare(8,8),
         number_compare(6,3)
