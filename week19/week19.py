@@ -1,4 +1,4 @@
-# Date: 9/1$/2023
+# Date: 9/14/2023
 # Author: Shantel Williams
 
 # Problem: Create a function that takes a number num and returns its length.
@@ -7,8 +7,9 @@
 # number_length(10) ➞ 2
 # number_length(5000) ➞ 4
 # number_length(0) ➞ 1
-def number_length(num):
-    return len(str(num))
+
+def number_length(num): 
+    return len(str(num)) #  ==> len("10") = 2
 
 def main():
     tests = [
