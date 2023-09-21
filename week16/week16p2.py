@@ -4,10 +4,11 @@
 # Problem 2: Given a list [1,2,3,4,5,6], create a new variable called answer2, which is a new list of all the even values.
 
 def even_num(alist):
-    if not alist:
+    
+    if not alist: # condition if list is empty
         return "No list provided."
     
-    answer2 = [num for num in alist if num%2 == 0]
+    answer2 = [num for num in alist if num%2 == 0] # create a new variable called answer2, which is a new list of all the even values.
 
     return answer2
 
