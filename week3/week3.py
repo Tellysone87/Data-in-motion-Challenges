@@ -3,10 +3,6 @@
 
 import math
 
-# Bonus (Optional)
-# Create a function, get_days, that takes two dates and returns the number of days between the first and second date
-
-
 # Problem 1: Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
 
 # TestCases:
@@ -33,13 +29,12 @@ def angle_in_radians(angle_in_radians):
     return f"{angle_in_radians} angle in radians converted to degrees is : {round(math.degrees(angle_in_radians),1)}"
 
 
-
 def main():
     test = [
         # total_price(100,10),
         # total_price(50,15)
-        convert_years_to_days(2),
-        angle_in_radians(2)
+        # convert_years_to_days(2),
+        # angle_in_radians(2)
     ]
 
     for t in test:
