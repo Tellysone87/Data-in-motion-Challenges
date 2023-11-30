@@ -9,15 +9,15 @@
 # print(is_perfect_square(17)) # Output: False
 
 def is_perfect_square(n):
-    i = 0
+    i =0
 
     while i < n:
-        if i*i == n:
+        if i * i == n:
             return True
+        i = i + 1
         
-        i +=1
-    
     return False
+    
 
 
 def main():
