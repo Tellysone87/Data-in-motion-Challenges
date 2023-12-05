@@ -8,12 +8,21 @@
 # list2 = [5, 4, 3, 2, 5]
 # list3 = ['a', 'b', 'c', 'a']
 
-def has_duplicates(lst):
-    pass
+def has_duplicates(alist):
+    remove_dup = set() # create set to remove duplicates
 
+    for item in alist: # add each list item to set
+        remove_dup.add(item)
+
+    if len(remove_dup) != len(alist): # check set length against list length
+        return True
+    else:
+        return False
 
 def main():
-    pass
+    print(has_duplicates([1, 2, 3, 4, 5]))
+    print(has_duplicates([5, 4, 3, 2, 5]))
+    print(has_duplicates(['a', 'b', 'c', 'a']))
 
 
 main()
