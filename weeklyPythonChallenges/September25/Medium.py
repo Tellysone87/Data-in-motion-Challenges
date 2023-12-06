@@ -15,7 +15,6 @@ def filtered_squares(limit, divisor):
     for i in range(1,limit +1):
         squares.append(i * i)
 
-    print(squares)
     final_list = [num for num in squares if num%divisor == 0]
 
     return final_list
