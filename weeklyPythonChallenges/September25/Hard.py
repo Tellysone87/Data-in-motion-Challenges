@@ -15,10 +15,11 @@
 import re
 
 def extract_tags(html_string):
-    list_all = re.findall()
+    pattern = "\<([a-z]+)"
+    list_all = re.findall(pattern, html_string)
 
-
-    print(list_all)
+    result = set(list_all)
+    return result
 
 def main():
     html1 = "<div><p>Some text here</p></div><a href='#'>Link</a>"
