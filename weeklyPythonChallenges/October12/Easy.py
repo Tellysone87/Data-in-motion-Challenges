@@ -1,5 +1,5 @@
 # Shantel Williams
-# 12/9/2023
+# 12/11/2023
 
 # Easy Challenge: Dictionary Value Doubler
 # You are given a dictionary where the keys are strings and the values are numbers. 
@@ -12,9 +12,11 @@
 # }
 
 def double_values(provided_dict):
-    pass
-    
+    for Each_key in provided_dict:
+        provided_dict[Each_key] = provided_dict.get(Each_key,0) * 2
 
+    return provided_dict
+    
 def main():
     sample_dict = {
     'a': 5,
