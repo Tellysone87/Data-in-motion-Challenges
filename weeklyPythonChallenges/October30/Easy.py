@@ -3,6 +3,7 @@
 
 # Easy: Convert Temperatures
 # Data analysts working with environmental data may need to switch between temperature scales.
+# https://youtu.be/RgmXzRT7ro8
 
 # Given a list of temperatures in Fahrenheit, create a function to convert them to Celsius.
 
