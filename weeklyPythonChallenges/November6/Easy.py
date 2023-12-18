@@ -5,11 +5,15 @@
 
 # ratings = ['5', '3', '4', '2', '5', '5', '1']
 
-def average_rating():
-    pass
+def average_rating(rate_list):
+    new_list = [int(num) for num in rate_list]
+
+    return sum(new_list) // len(new_list)
+    
 
 def main():
-    pass
+    ratings = ['5', '3', '4', '2', '5', '5', '1']
+    print(average_rating(ratings))
 
 main()
 
