@@ -20,9 +20,24 @@
 #     {'customer_id': 3, 'electronics': 100, 'furniture': 100, 'stationery': 50},
 #     {'customer_id': 4, 'electronics': 800, 'furniture': 1000, 'stationery': 200}
 # ]
-
 def segment_customers(purchase_list):
-    pass
+    category = {} # Empty dictionary to hold segments
+
+    # Function to collect each customer total purchase amounts
+    total = lambda customer: customer['electronics'] + customer['furniture'] + customer['stationery']
+
+    for cust in purchase_list: # loop to grab total and check which segment the customer belong in.
+
+        print(total(cust)) # print statmen to check total amounts
+
+        if total(cust) > 1500:
+            category[cust['customer_id']] = "High"  # high condition
+        if total(cust) < 1500 and total(cust) > 500:
+            category[cust['customer_id']] = "Medium" # medium condition
+        if total(cust) < 500:
+            category[cust['customer_id']] = "low" # low condition
+
+    return category # return Dictionary
 
 def main():
     purchases = [
