@@ -8,7 +8,7 @@ def divide_numbers(num1, num2):
     try:
         result = num1 / num2
     except ZeroDivisionError:
-        print('Cannot divide by zero')
+        result = 'Cannot divide by zero' # original line - print('Cannot divide by zero')
     finally:
         return result
 
