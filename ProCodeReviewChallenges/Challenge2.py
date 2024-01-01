@@ -15,5 +15,5 @@ def second_largest(numbers):
             second_largest = num
     return second_largest
 
-numbers = [1, 2, 3, 4, 5]
-print(second_largest(numbers)) # Expected: 4
+numbers = [1, 2, 3, 4, 5,6,8]
+print(second_largest(numbers)) # Expected: 4 
