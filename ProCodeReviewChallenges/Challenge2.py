@@ -8,8 +8,8 @@
 # However, it is currently not working as intended. Identify and fix the error.
 
 def second_largest(numbers):
-    largest = max(numbers)
-    second_largest = max(numbers)
+    largest = max(numbers)                                                                                                                      
+    second_largest = 0  ## original - second_largest = max(numbers)
     for num in numbers:
         if num < largest and num > second_largest:
             second_largest = num
