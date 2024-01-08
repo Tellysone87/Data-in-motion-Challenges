@@ -9,11 +9,13 @@
 
 def second_largest(numbers):
     largest = max(numbers)                                                                                                                      
-    second_largest = 0  ## original - second_largest = max(numbers)
+    second_largest = min(numbers)  ## original - second_largest = max(numbers)
     for num in numbers:
         if num < largest and num > second_largest:
             second_largest = num
     return second_largest
 
 numbers = [1, 2, 3, 4, 5,6,8]
+numbers2 = [-1,-2, -3, -4, -5,-6,-8]
 print(second_largest(numbers)) # Expected: 4 
+print(second_largest(numbers2))
